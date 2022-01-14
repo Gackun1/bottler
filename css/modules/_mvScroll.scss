@@ -1,0 +1,139 @@
+/* scroll add */
+.mv {
+  height: 5000px;
+}
+
+.mv-scroll-box {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  position: sticky;
+  top: 0;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    background: #000;
+    width: 100%;
+    height: calc((100% - 500px) / 2);
+    transform: translate(0, 0);
+    bottom: 0;
+  }
+  &__inner {
+    width: 100%;
+  }
+  &__item {
+    width: auto;
+    height: calc(65% + 10px);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+  &__img {
+    height: 100%;
+    object-fit: contain;
+  }
+  &__waves {
+    position: absolute;
+    bottom: 10%;
+    left: 1px;
+    z-index: -1;
+    aspect-ratio: 10;
+    width: 98%;
+  }
+  &__waves-bottom {
+    position: absolute;
+    z-index: -2;
+    bottom: 10%;
+    left: 0;
+    background: #67789e;
+    height: 100%;
+    width: 100%;
+    transform: translate(0, 100%);
+  }
+}
+
+.parallax > use {
+  animation: move-forever 20s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -5s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -10s;
+  animation-duration: 12s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -15s;
+  animation-duration: 14s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -20s;
+  animation-duration: 16s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+.img-mv-front {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+@keyframes bggradient {
+  0% {
+    background-position: 0% 100%;
+    transform: scaleX(1) translate(-45%, 0);
+  }
+  50% {
+    transform: scaleX(1.1) translate(-45%, 0);
+  }
+  100% {
+    background-position: 0% 0%;
+    transform: scaleX(1) translate(-45%, 0);
+  }
+}
+
+.mv {
+  position: relative;
+}
+
+.mv-water {
+  display: block;
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 50%;
+  transform: translate(-45%, 0);
+  width: 1.5%;
+  height: calc(100%);
+  background: linear-gradient(
+    0deg,
+    #43a4d5cc 0%,
+    #43a4d566 25%,
+    #43a4d5cc 50%,
+    #43a4d566 75%,
+    #43a4d5cc 100%
+  );
+  background-size: 200% 200%; /*サイズを大きくひきのばす*/
+  animation: bggradient 3s ease-in-out infinite;
+}
+
+.bg-black {
+  position: relative;
+  background: #000;
+}

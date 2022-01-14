@@ -1,0 +1,294 @@
+@media (min-width: 1025px) {
+  .bottle-intro {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+
+    & .sticky-div {
+      position: absolute;
+      height: 90%;
+      top: 10%;
+      right: -6%;
+      width: 12%;
+
+      & .sticky {
+        width: 100%;
+        z-index: 2;
+        position: sticky;
+        top: 10vh;
+      }
+    }
+
+    & .bottle-intro-section {
+      width: 100%;
+      height: auto;
+      position: relative;
+      margin: 0 0 10rem;
+
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    & .intro-text {
+      width: 100%;
+      height: auto;
+      text-align: left;
+      color: $color-white;
+
+      & h2 {
+        font-size: 4rem;
+        margin: 4rem 0 2rem;
+      }
+      & p {
+        font-size: 1.4rem;
+        line-height: 150%;
+      }
+    }
+  }
+
+  .intro-flex {
+    width: 100%;
+    height: auto;
+    color: $color-white;
+    display: flex;
+    flex-wrap: wrap;
+
+    & div {
+      width: 50%;
+      height: auto;
+      position: relative;
+
+      &:nth-child(1) {
+        order: 2;
+      }
+      &:nth-child(2) {
+        order: 1;
+      }
+      &:nth-child(3) {
+        order: 3;
+      }
+      &:nth-child(4) {
+        order: 4;
+      }
+      &:nth-child(5) {
+        order: 6;
+      }
+      &:nth-child(6) {
+        order: 5;
+      }
+
+      & img {
+        width: 100%;
+        height: auto;
+      }
+
+      & div {
+        width: 80%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        & h2 {
+          font-size: 2.4rem;
+          margin: 0 0 2rem;
+          line-height: 180%;
+        }
+        & p {
+          font-size: 1.2rem;
+          line-height: 180%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .bottle-intro {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+
+    & .sticky-div {
+      position: absolute;
+      height: 80%;
+      top: 20%;
+      right: -6%;
+      width: 12%;
+
+      & .sticky {
+        width: 100%;
+        z-index: 2;
+        position: sticky;
+        top: 10vh;
+      }
+    }
+
+    & .bottle-intro-section {
+      width: 100%;
+      height: auto;
+      position: relative;
+      margin: 0 0 10rem;
+
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    & .intro-text {
+      width: 100%;
+      height: auto;
+      text-align: left;
+      color: $color-white;
+
+      & h2 {
+        font-size: 4rem;
+        margin: 4rem 0 2rem;
+      }
+      & p {
+        font-size: 1.4rem;
+        line-height: 150%;
+      }
+    }
+  }
+
+  .intro-flex {
+    width: 100%;
+    height: auto;
+    color: $color-white;
+    display: flex;
+    flex-wrap: wrap;
+
+    & div {
+      width: 50%;
+      height: auto;
+      position: relative;
+
+      &:nth-child(1) {
+        order: 2;
+      }
+      &:nth-child(2) {
+        order: 1;
+      }
+      &:nth-child(3) {
+        order: 3;
+      }
+      &:nth-child(4) {
+        order: 4;
+      }
+      &:nth-child(5) {
+        order: 6;
+      }
+      &:nth-child(6) {
+        order: 5;
+      }
+
+      & img {
+        width: 100%;
+        height: auto;
+      }
+
+      & div {
+        width: 80%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        & h2 {
+          font-size: 1.5rem;
+          line-height: 150%;
+          margin: 0 0 2rem;
+        }
+        & p {
+          font-size: 1rem;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 759px) {
+  .bottle-intro {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+
+    & .sticky-div {
+      display: none;
+    }
+
+    & .bottle-intro-section {
+      width: 100%;
+      height: auto;
+      position: relative;
+      margin: 0 0 6rem;
+
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    & .intro-text {
+      width: 90%;
+      height: auto;
+      margin: 0 auto;
+      text-align: left;
+      color: $color-white;
+
+      & h2 {
+        font-size: 2.2rem;
+        margin: 2rem 0 1rem;
+      }
+      & p {
+        font-size: 1.2rem;
+        line-height: 150%;
+      }
+    }
+  }
+
+  .intro-flex {
+    width: 100%;
+    height: auto;
+    color: $color-white;
+
+    & div {
+      width: 100%;
+      height: auto;
+      position: relative;
+
+      & img {
+        width: 100%;
+        height: auto;
+      }
+
+      & div {
+        width: 90%;
+        height: auto;
+        padding: 5% 5% 15%; 
+        text-align: center;
+
+        & h2 {
+          font-size: 1.6rem;
+          margin: 0 0 1rem;
+        }
+        & p {
+          font-size: 1rem;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+}

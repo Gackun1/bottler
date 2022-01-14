@@ -1,0 +1,108 @@
+@media (min-width: 1025px) {
+  .font-area {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 10rem;
+    padding-top: 10rem;
+    font-size: $color-white;
+
+    & div {
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+      color: $color-white;
+      text-align: center;
+
+      & p {
+        font-size: 4rem;
+        text-align: left;
+        line-height: 180%;
+        transition: all 0.2s ease-in-out;
+
+        &:last-child {
+          font-size: 4.4rem;
+        }
+      }
+    }
+  }
+  .text-blue {
+    color: $color-neonblue;
+    transition: all 0.2s ease-in-out;
+  }
+
+  //2つめのfontArea
+  .font-area:nth-child(2) {
+    margin: 16rem auto 16rem;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .font-area {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 10rem;
+    padding-top: 10rem;
+    font-size: $color-white;
+
+    & div {
+      width: 700px;
+      height: auto;
+      margin: 0 auto;
+      color: $color-white;
+      text-align: center;
+
+      & p {
+        font-size: 3rem;
+        text-align: left;
+        line-height: 180%;
+        transition: all 0.2s ease-in-out;
+
+        &:last-child {
+          font-size: 3.6rem;
+        }
+      }
+    }
+  }
+  .text-blue {
+    color: $color-neonblue;
+    transition: all 0.2s ease-in-out;
+  }
+
+  //2つめのfontArea
+  .font-area:nth-child(2) {
+    margin: 16rem auto 16rem;
+  }
+}
+
+@media (max-width: 759px) {
+  .font-area {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 5rem;
+    padding-top: 5rem;
+    font-size: $color-white;
+
+    & div {
+      width: 90%;
+      height: auto;
+      margin: 0 auto;
+      color: $color-white;
+      text-align: center;
+
+      & p {
+        font-size: 2rem;
+        text-align: left;
+        line-height: 180%;
+        transition: all 0.2s ease-in-out;
+
+        &:last-child {
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
+  .text-blue {
+    color: $color-neonblue;
+    transition: all 0.2s ease-in-out;
+  }
+}

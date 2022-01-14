@@ -1,0 +1,39 @@
+$font1: "Noto Sans JP", sans-serif;
+$color-white: #fff;
+$color-lightgray: #888;
+$color-black: #000;
+$color-blue: rgb(4, 0, 255);
+$color-neonblue: #36b5ff;
+$color-neonblue2: #1ea7d3;
+
+body {
+  width: 100%;
+  font-family: $font1;
+  background-color: $color-black;
+}
+
+@import "modules/header";
+
+@import "modules/mv";
+
+@import "modules/fontArea";
+
+@import "modules/content";
+
+@import "modules/textBox";
+
+@import "modules/paralax";
+
+@import "modules/h3only";
+
+@import "modules/swiper";
+
+@import "modules/bottleIntro";
+
+@import "modules/movie";
+
+@import "modules/footer";
+
+@import "modules/mvScroll";
+
+// @import "modules/mvScroll";

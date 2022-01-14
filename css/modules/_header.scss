@@ -1,0 +1,225 @@
+@media (min-width: 1025px) {
+  .header-top {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 2rem 0 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    & .header-wrap {
+      width: 85%;
+      height: auto;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+
+      & h1 {
+        font-size: 2rem;
+        color: $color-white;
+
+        & a {
+          text-decoration: none;
+          color: $color-white;
+
+          & img {
+            width: auto;
+            height: 70px;
+          }
+        }
+      }
+
+      .nav {
+        width: 250px;
+        height: auto;
+
+        ul {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          align-items: center;
+
+          li {
+            list-style: none;
+
+            a {
+              color: $color-white;
+              font-size: 1.2rem;
+              text-decoration: none;
+            }
+            &:nth-child(2) a {
+              background-color: $color-neonblue2;
+              border-radius: 2rem;
+              padding: 0.5rem 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .install {
+    display: none;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .header-top {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 1rem 0 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    & .header-wrap {
+      width: 85%;
+      height: auto;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+
+      & h1 {
+        font-size: 2rem;
+        color: $color-white;
+
+        & a {
+          text-decoration: none;
+          color: $color-white;
+
+          & img {
+            width: auto;
+            height: 60px;
+          }
+        }
+      }
+
+      .nav {
+        width: 250px;
+        height: auto;
+
+        ul {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          align-items: center;
+
+          li {
+            list-style: none;
+
+            a {
+              color: $color-white;
+              font-size: 1.2rem;
+              text-decoration: none;
+            }
+            &:nth-child(2) a {
+              background-color: $color-neonblue2;
+              border-radius: 2rem;
+              padding: 0.5rem 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .install {
+    display: none;
+  }
+}
+
+@media (max-width: 759px) {
+  .header-top {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 1rem 0 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    & .header-wrap {
+      width: 85%;
+      height: auto;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+
+      & h1 {
+        font-size: 2rem;
+        color: $color-white;
+
+        & a {
+          text-decoration: none;
+          color: $color-white;
+
+          & img {
+            width: auto;
+            height: 50px;
+          }
+        }
+      }
+
+      .nav {
+        width: 250px;
+        height: auto;
+
+        ul {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: flex-end;
+          align-items: center;
+
+          li {
+            list-style: none;
+
+            a {
+              color: $color-white;
+              font-size: 1.2rem;
+              text-decoration: none;
+            }
+            &:nth-child(2) a {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .install {
+    position: absolute;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    // border: solid 1px $color-blue;
+    background-color: $color-neonblue2;
+    color: $color-white;
+    text-decoration: none;
+    padding: 1rem 0rem;
+    font-size: 1.6rem;
+    // border-top-left-radius: 1rem;
+    // border-top-right-radius: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+}
