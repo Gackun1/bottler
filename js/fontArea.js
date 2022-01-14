@@ -32,8 +32,6 @@
 //   io.observe(target);
 // });
 
-
-
 const callback = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -44,7 +42,6 @@ const callback = (entries) => {
   });
 };
 
-
 const option = {
   rootMargin: "-47.5% 0%",
 };
@@ -53,7 +50,6 @@ const targets = document.querySelectorAll(".font-area div p");
 targets.forEach((target) => {
   io.observe(target);
 });
-
 
 // text-box2
 const callback2 = (entries) => {
@@ -75,13 +71,10 @@ targets2.forEach((target) => {
   io2.observe(target);
 });
 
-
-
 const callback3 = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("border-blue2");
-      console.log(entry.target);
     } else {
       entry.target.classList.remove("border-blue2");
     }
