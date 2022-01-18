@@ -1,3 +1,4 @@
+@media screen and (min-width: 1025px) {
 .wrap {
   width: 100%;
   height: auto;
@@ -19,14 +20,15 @@
 
     & div {
       position: absolute;
-      top: 70vh;
-      right: calc(10% - 2rem);
+      top: 60vh;
+      right: calc(5% - 2rem);
       font-weight: 300;
       text-align: center;
+      z-index: 20;
 
       & h2 {
         color: $color-white;
-        font-size: 2rem;
+        font-size: 4rem;
         margin: 0 0 2rem 0;
         line-height: 180%;
       }
@@ -37,7 +39,7 @@
         line-height: 1.5;
 
         & img {
-          width: 150px;
+          width: 300px;
           height: auto;
         }
       }
@@ -100,36 +102,234 @@
     }
   }
 }
-
+}
 @media screen and (min-width: 760px) and (max-width: 1024px) {
-  .mv section:nth-child(1) div {
-    top: 70%;
-    z-index: 1;
+
+  .wrap {
+    width: 100%;
+    height: auto;
   }
-  .mv section:nth-child(1) .img-mv {
+
+.mv {
+  width: 100%;
+  height: auto;
+
+  & section:nth-child(1) {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    & .img-mv {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+    .img-mv-front {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+     }
+
+    & div {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 60vh;
+      left: 0%;
+      font-weight: 300;
+      text-align: center;
+      z-index: 20;
+
+      & h2 {
+        color: $color-white;
+        font-size: 3rem;
+        margin: 0 0 2rem 0;
+        line-height: 180%;
+        text-shadow: 2px 2px 20px $color-black;
+      }
+
+      & p {
+        color: $color-white;
+        font-size: 1rem;
+        line-height: 1.5;
+
+        & img {
+          width: 200px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+  & .scroll {
     width: 100%;
     height: 100vh;
-    object-fit: cover;
-  }
-  .img-mv-front {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    & div {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+
+      & img {
+        width: 14%;
+        height: auto;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+      }
+
+      & p:nth-child(1) {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: 15%;
+        font-size: 2.4rem;
+        line-height: 150%;
+        text-align: center;
+        color: $color-white;
+
+        & span {
+          font-size: 1rem;
+        }
+      }
+      & p:nth-child(2) {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        right: 15%;
+        font-size: 2rem;
+        line-height: 180%;
+        text-align: center;
+        color: $color-white;
+
+        & span:nth-child(1) {
+          font-size: 1rem;
+        }
+        & .font-big {
+          font-size: 4rem;
+          letter-spacing: 0.1rem;
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 759px) {
-  .mv section:nth-child(1) div {
-    top: 50%;
-    z-index: 1;
-  }
-  .mv section:nth-child(1) .img-mv {
+  .wrap {
     width: 100%;
-    height: 100vh;
-    object-fit: cover;
+    height: auto;
   }
-  .img-mv-front {
+
+.mv {
+  width: 100%;
+  height: auto;
+
+  & section:nth-child(1) {
+    position: relative;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+
+    & .img-mv {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+    .img-mv-front {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+     }
+
+    & div {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 60vh;
+      left: 0%;
+      font-weight: 300;
+      text-align: center;
+      z-index: 20;
+
+      & h2 {
+        color: $color-white;
+        font-size: 2rem;
+        margin: 0 0 2rem 0;
+        line-height: 180%;
+        text-shadow: 2px 2px 20px $color-black;
+      }
+
+      & p {
+        color: $color-white;
+        font-size: 1rem;
+        line-height: 1.5;
+
+        & img {
+          width: 150px;
+          height: auto;
+        }
+      }
+    }
   }
 }
+
+  & .scroll {
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    & div {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+
+      & img {
+        width: 14%;
+        height: auto;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+      }
+
+      & p:nth-child(1) {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: 15%;
+        font-size: 2.4rem;
+        line-height: 150%;
+        text-align: center;
+        color: $color-white;
+
+        & span {
+          font-size: 1rem;
+        }
+      }
+      & p:nth-child(2) {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        right: 15%;
+        font-size: 2rem;
+        line-height: 180%;
+        text-align: center;
+        color: $color-white;
+
+        & span:nth-child(1) {
+          font-size: 1rem;
+        }
+        & .font-big {
+          font-size: 4rem;
+          letter-spacing: 0.1rem;
+        }
+      }
+    }
+  }
+}
+

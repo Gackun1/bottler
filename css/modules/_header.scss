@@ -123,6 +123,8 @@
               color: $color-white;
               font-size: 1.2rem;
               text-decoration: none;
+              text-shadow: 1px 1px 10px $color-black;
+
             }
             &:nth-child(2) a {
               background-color: $color-neonblue2;
@@ -194,6 +196,8 @@
               color: $color-white;
               font-size: 1.2rem;
               text-decoration: none;
+              text-shadow: 1px 1px 10px $color-black;
+
             }
             &:nth-child(2) a {
               display: none;

@@ -26,7 +26,7 @@
       position: relative;
       margin: 0 0 10rem;
 
-      & img {
+      & video {
         width: 100%;
         height: auto;
       }
@@ -83,6 +83,8 @@
       & img {
         width: 100%;
         height: auto;
+        object-fit: cover;
+        aspect-ratio: 4/5;
       }
 
       & div {
@@ -136,7 +138,7 @@
       position: relative;
       margin: 0 0 10rem;
 
-      & img {
+      & video {
         width: 100%;
         height: auto;
       }
@@ -193,6 +195,8 @@
       & img {
         width: 100%;
         height: auto;
+        object-fit: cover;
+        aspect-ratio: 4/5;
       }
 
       & div {
@@ -235,7 +239,7 @@
       position: relative;
       margin: 0 0 6rem;
 
-      & img {
+      & video {
         width: 100%;
         height: auto;
       }
@@ -272,6 +276,9 @@
       & img {
         width: 100%;
         height: auto;
+        object-fit: cover;
+        aspect-ratio: 4/5;
+      
       }
 
       & div {

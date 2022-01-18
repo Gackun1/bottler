@@ -146,6 +146,7 @@ body {
     color: #fff;
     font-size: 1.2rem;
     text-decoration: none;
+    text-shadow: 1px 1px 10px #000;
   }
   .header-top .header-wrap .nav ul li:nth-child(2) a {
     background-color: #1ea7d3;
@@ -222,6 +223,7 @@ body {
     color: #fff;
     font-size: 1.2rem;
     text-decoration: none;
+    text-shadow: 1px 1px 10px #000;
   }
   .header-top .header-wrap .nav ul li:nth-child(2) a {
     display: none;
@@ -244,119 +246,116 @@ body {
   }
 }
 
-.wrap {
-  width: 100%;
-  height: auto;
-}
-
-.mv {
-  width: 100%;
-  height: auto;
-}
-
-.mv section:nth-child(1) {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-.mv section:nth-child(1) .img-mv {
-  width: 100%;
-  height: auto;
-}
-
-.mv section:nth-child(1) div {
-  position: absolute;
-  top: 70vh;
-  right: calc(10% - 2rem);
-  font-weight: 300;
-  text-align: center;
-}
-
-.mv section:nth-child(1) div h2 {
-  color: #fff;
-  font-size: 2rem;
-  margin: 0 0 2rem 0;
-  line-height: 180%;
-}
-
-.mv section:nth-child(1) div p {
-  color: #fff;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.mv section:nth-child(1) div p img {
-  width: 150px;
-  height: auto;
-}
-
-.mv .scroll {
-  width: 100%;
-  height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  left: 0;
-}
-
-.mv .scroll div {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
-
-.mv .scroll div img {
-  width: 14%;
-  height: auto;
-  position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-}
-
-.mv .scroll div p:nth-child(1) {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  left: 15%;
-  font-size: 2.4rem;
-  line-height: 150%;
-  text-align: center;
-  color: #fff;
-}
-
-.mv .scroll div p:nth-child(1) span {
-  font-size: 1rem;
-}
-
-.mv .scroll div p:nth-child(2) {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  right: 15%;
-  font-size: 2rem;
-  line-height: 180%;
-  text-align: center;
-  color: #fff;
-}
-
-.mv .scroll div p:nth-child(2) span:nth-child(1) {
-  font-size: 1rem;
-}
-
-.mv .scroll div p:nth-child(2) .font-big {
-  font-size: 4rem;
-  letter-spacing: 0.1rem;
+@media screen and (min-width: 1025px) {
+  .wrap {
+    width: 100%;
+    height: auto;
+  }
+  .mv {
+    width: 100%;
+    height: auto;
+  }
+  .mv section:nth-child(1) {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .mv section:nth-child(1) .img-mv {
+    width: 100%;
+    height: auto;
+  }
+  .mv section:nth-child(1) div {
+    position: absolute;
+    top: 60vh;
+    right: calc(5% - 2rem);
+    font-weight: 300;
+    text-align: center;
+    z-index: 20;
+  }
+  .mv section:nth-child(1) div h2 {
+    color: #fff;
+    font-size: 4rem;
+    margin: 0 0 2rem 0;
+    line-height: 180%;
+  }
+  .mv section:nth-child(1) div p {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .mv section:nth-child(1) div p img {
+    width: 300px;
+    height: auto;
+  }
+  .mv .scroll {
+    width: 100%;
+    height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  .mv .scroll div {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .mv .scroll div img {
+    width: 14%;
+    height: auto;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+  }
+  .mv .scroll div p:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    left: 15%;
+    font-size: 2.4rem;
+    line-height: 150%;
+    text-align: center;
+    color: #fff;
+  }
+  .mv .scroll div p:nth-child(1) span {
+    font-size: 1rem;
+  }
+  .mv .scroll div p:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    right: 15%;
+    font-size: 2rem;
+    line-height: 180%;
+    text-align: center;
+    color: #fff;
+  }
+  .mv .scroll div p:nth-child(2) span:nth-child(1) {
+    font-size: 1rem;
+  }
+  .mv .scroll div p:nth-child(2) .font-big {
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
+  }
 }
 
 @media screen and (min-width: 760px) and (max-width: 1024px) {
-  .mv section:nth-child(1) div {
-    top: 70%;
-    z-index: 1;
+  .wrap {
+    width: 100%;
+    height: auto;
+  }
+  .mv {
+    width: 100%;
+    height: auto;
+  }
+  .mv section:nth-child(1) {
+    position: relative;
+    width: 100%;
+    height: auto;
   }
   .mv section:nth-child(1) .img-mv {
     width: 100%;
@@ -364,18 +363,107 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .img-mv-front {
+  .mv section:nth-child(1) .img-mv-front {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .mv section:nth-child(1) div {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 60vh;
+    left: 0%;
+    font-weight: 300;
+    text-align: center;
+    z-index: 20;
+  }
+  .mv section:nth-child(1) div h2 {
+    color: #fff;
+    font-size: 3rem;
+    margin: 0 0 2rem 0;
+    line-height: 180%;
+    text-shadow: 2px 2px 20px #000;
+  }
+  .mv section:nth-child(1) div p {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .mv section:nth-child(1) div p img {
+    width: 200px;
+    height: auto;
+  }
+  .scroll {
+    width: 100%;
+    height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  .scroll div {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .scroll div img {
+    width: 14%;
+    height: auto;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+  }
+  .scroll div p:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    left: 15%;
+    font-size: 2.4rem;
+    line-height: 150%;
+    text-align: center;
+    color: #fff;
+  }
+  .scroll div p:nth-child(1) span {
+    font-size: 1rem;
+  }
+  .scroll div p:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    right: 15%;
+    font-size: 2rem;
+    line-height: 180%;
+    text-align: center;
+    color: #fff;
+  }
+  .scroll div p:nth-child(2) span:nth-child(1) {
+    font-size: 1rem;
+  }
+  .scroll div p:nth-child(2) .font-big {
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
   }
 }
 
 @media screen and (max-width: 759px) {
-  .mv section:nth-child(1) div {
-    top: 50%;
-    z-index: 1;
+  .wrap {
+    width: 100%;
+    height: auto;
+  }
+  .mv {
+    width: 100%;
+    height: auto;
+  }
+  .mv section:nth-child(1) {
+    position: relative;
+    width: 100%;
+    height: auto;
   }
   .mv section:nth-child(1) .img-mv {
     width: 100%;
@@ -383,11 +471,91 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .img-mv-front {
+  .mv section:nth-child(1) .img-mv-front {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .mv section:nth-child(1) div {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 60vh;
+    left: 0%;
+    font-weight: 300;
+    text-align: center;
+    z-index: 20;
+  }
+  .mv section:nth-child(1) div h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 0 2rem 0;
+    line-height: 180%;
+    text-shadow: 2px 2px 20px #000;
+  }
+  .mv section:nth-child(1) div p {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .mv section:nth-child(1) div p img {
+    width: 150px;
+    height: auto;
+  }
+  .scroll {
+    width: 100%;
+    height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  .scroll div {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .scroll div img {
+    width: 14%;
+    height: auto;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+  }
+  .scroll div p:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    left: 15%;
+    font-size: 2.4rem;
+    line-height: 150%;
+    text-align: center;
+    color: #fff;
+  }
+  .scroll div p:nth-child(1) span {
+    font-size: 1rem;
+  }
+  .scroll div p:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    right: 15%;
+    font-size: 2rem;
+    line-height: 180%;
+    text-align: center;
+    color: #fff;
+  }
+  .scroll div p:nth-child(2) span:nth-child(1) {
+    font-size: 1rem;
+  }
+  .scroll div p:nth-child(2) .font-big {
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
   }
 }
 
@@ -1001,7 +1169,7 @@ body {
     height: 100%;
     overflow: hidden;
     position: relative;
-    aspect-ratio: 16/9;
+    aspect-ratio: 4/3;
     border: 1px solid #888;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -1030,7 +1198,7 @@ body {
     height: 100%;
     overflow: hidden;
     position: relative;
-    aspect-ratio: 16/9;
+    aspect-ratio: 4/3;
     background-color: #000;
     border: 1px solid #888;
     -webkit-box-sizing: border-box;
@@ -1040,7 +1208,7 @@ body {
     width: 100%;
     height: auto;
     position: absolute;
-    top: 150px;
+    top: 0px;
     background-color: #000;
   }
 }
@@ -1056,7 +1224,7 @@ body {
     height: 100%;
     overflow: hidden;
     position: relative;
-    aspect-ratio: 16/16;
+    aspect-ratio: 4/3;
     background-color: #000;
     border: 1px solid #888;
     -webkit-box-sizing: border-box;
@@ -1470,7 +1638,7 @@ body {
     position: relative;
     margin: 0 0 10rem;
   }
-  .bottle-intro .bottle-intro-section img {
+  .bottle-intro .bottle-intro-section video {
     width: 100%;
     height: auto;
   }
@@ -1536,6 +1704,9 @@ body {
   .intro-flex div img {
     width: 100%;
     height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    aspect-ratio: 4/5;
   }
   .intro-flex div div {
     width: 80%;
@@ -1585,7 +1756,7 @@ body {
     position: relative;
     margin: 0 0 10rem;
   }
-  .bottle-intro .bottle-intro-section img {
+  .bottle-intro .bottle-intro-section video {
     width: 100%;
     height: auto;
   }
@@ -1651,6 +1822,9 @@ body {
   .intro-flex div img {
     width: 100%;
     height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    aspect-ratio: 4/5;
   }
   .intro-flex div div {
     width: 80%;
@@ -1689,7 +1863,7 @@ body {
     position: relative;
     margin: 0 0 6rem;
   }
-  .bottle-intro .bottle-intro-section img {
+  .bottle-intro .bottle-intro-section video {
     width: 100%;
     height: auto;
   }
@@ -1721,6 +1895,9 @@ body {
   .intro-flex div img {
     width: 100%;
     height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    aspect-ratio: 4/5;
   }
   .intro-flex div div {
     width: 90%;
