@@ -24,16 +24,17 @@ p {
   background: #000;
 }
 
-.header {
-  position: sticky;
-  z-index: 100;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 10px 20px;
-  background: #000;
+.header-top {
+  // position: sticky;
+  // z-index: 100;
+  // top: 0;
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+  // width: 100%;
+  // padding: 10px 20px;
+  // background: #000;
+  
   &__logo {
     width: 180px;
   }
@@ -48,6 +49,9 @@ p {
     border-radius: 9999px;
     background: #25a7d4;
     color: #fff;
+  }
+  .header-wrap .nav ul li a{
+    font-weight: bold;
   }
 }
 
@@ -203,4 +207,26 @@ p {
       margin: 20px 0;
     }
   }
+  .section-footer {
+    padding: 120px 0 50px 0;
+    font-size: 40px;
+    text-align: center;
+    &__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      margin: 0 auto 60px auto;
+      font-size: 30px;
+      padding: 10px 20px;
+      border-radius: 9999px;
+      background: #25a7d4;
+      color: #fff;
+    }
+    & p {
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+
 }
